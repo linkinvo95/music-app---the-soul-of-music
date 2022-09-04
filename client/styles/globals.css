@@ -54,8 +54,21 @@ color: red;
 
 
 .search_com {
-  margin-left: 250px;
+  margin-left: 80px;
   width: 500px;
   height: 60px;
   background: #172533;
+}
+
+.btn_auth {
+  background-image: -webkit-linear-gradient( -57deg, rgb(255, 85, 62) 0%, rgb(255, 0, 101) 100%);
+  cursor: pointer;
+position: relative;
+bottom: 50px;
+
+}
+
+.h4_line {
+  display: flex;
+  justify-content: space-between;
 }
