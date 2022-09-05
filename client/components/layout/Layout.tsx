@@ -7,14 +7,14 @@ const Layout: FC<PropsWithChildren<{ title: string}>> = ({ children, title }) =>
         <>
             <div>
                 <title>{title}</title>
-                <main>
-                    <section>
-                        {/* <Header/> */}
+                
+                        <Header/>
+                    <section className='className=" ml-[350px] mt-[170px] w-[1320px] h-[2810px]"'>
                         {children}
 
                     </section>
 
-                </main>
+            
             </div>
         </>
     );

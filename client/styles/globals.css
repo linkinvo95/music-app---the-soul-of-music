@@ -50,7 +50,7 @@ height: 80px;
 }
 
 .img_artist {
-  @apply hover:scale-100 hover:opacity-75 duration-700 hover:animate-pulse  ;
+  @apply hover:scale-125 hover:opacity-75 duration-700  ;
 }
 
 .search_com {

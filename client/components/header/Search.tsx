@@ -1,15 +1,15 @@
 
 function Search() {
   return (
-<div className='bg-[#0b1828] fixed pt-4 ml-[224px] w-full h-[103px]'>
+<div className='bg-[#0b1828] fixed top-0 pt-4 
+ml-[224px] w-full h-[103px]'>
     <div
       className="
       search_com      
     bg-[#1a1a1a]
     rounded-full
     overflow-hidden
-    p-1.5 px-5 pr-8 flex items-center 
-  
+    p-1.5 px-5 pr-8 flex items-center
 
     "
     >

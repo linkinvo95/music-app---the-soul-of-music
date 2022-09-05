@@ -35,7 +35,7 @@ export const artist = [
 const Main: FC= () => {
     return (
         <>
-            <div className=" ml-[250px] mt-[170px] w-[1320px] h-[2810px]">
+            <div>
             <div className="h4_line">
                 <h4 className=' text-[#868d94] text-[20px] w-[108px] pt-6'>Best artist</h4>  
                 <div className='text-white border-double  border-b-4  border-[#868d94] w-full m-10'></div>
@@ -45,9 +45,9 @@ const Main: FC= () => {
             </div>
             <div className='flex flex-wrap h-[330px] w-[97%] space-x-48 > * + *'>
 
-             {artist.map(() => {
+             {artist.map(({id}) => {
                  return (
-                     <DashboardArtist/>
+                     <DashboardArtist key={id}/>
                      
                      )
                     })
@@ -61,7 +61,7 @@ const Main: FC= () => {
                 <a className=' text-[#868d94] text-[19px] hover:text-red-600 w-[114px] pt-6'>View More</a>
                 </Link>
 </div>
-<PlayListItem/>
+{/* <PlayListItem/> */}
             </div>
         </>
     );
