@@ -35,23 +35,23 @@ a,h1,h2 {
   background-color: #0b1828;
 }
 
-.icon_transform{
-  background: url('/img/home.svg')no-repeat;
-  padding-top: 2px;
-  padding-left: 24px;
-color: #868d94;
-}
-
-
 .icon_transform:hover{
-  background-image: url('/img/home2.svg');
-color: red;
+  background: url('/img/images.png')no-repeat;
+
+
+width: 70px;
+height: 80px;
+
+
 }
 
 .icon {
   @apply hover:scale-125 transition-all duration-150 ease-out fill-red-500;
 }
 
+.img_artist {
+  @apply hover:scale-100 hover:opacity-75 duration-700 hover:animate-pulse  ;
+}
 
 .search_com {
   margin-left: 80px;

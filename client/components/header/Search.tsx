@@ -28,7 +28,8 @@ function Search() {
              placeholder-[#868d94] ml-2 text-ls'
              placeholder="Search..."
              />
-             <div className="flex items-center divide-dotted divide-x-2 divide-[#333] ml-auto hover:divide-white">
+             <div className="flex items-center divide-dotted divide-x-2
+              divide-[#333] ml-auto hover:divide-white">
 
              <div className='flex items-center space-x-1.5 text-[#cecece] pl-4'>
              <img src='img/search.svg' className='w-8 animate-pulse'/>

@@ -15,7 +15,7 @@ const Sidebar = () => {
             <h2>BROWSE MUSIC</h2>
             <nav>
                 <ul className='mr-20'>
-                    <li className='flex p-2'><img className='w-7 mr-7 icon' src="img/home.svg" alt="Home_icon" /><Link href='#'><a className=' hover:text-red-600 icon'>Family</a></Link></li>
+                    <li className='flex p-2'><img className='w-7 mr-7 icon' src="img/home.svg" alt="Home_icon" /><Link href='#'><a className=' hover:text-red-600 icon '>Family</a></Link></li>
                     <li className='flex p-2'><img className='w-6 mr-7 icon' src="img/microphone.svg" alt="microphone_icon" /><Link href='#'><a className='hover:text-red-600 icon'>Artist</a></Link></li>
                     <li className='flex p-2'><img className=' w-7 mr-6 icon' src="img/album.svg" alt="Album_icon" /><Link href='#'><a className='hover:text-red-600 icon'>Album</a></Link></li>
                     <li className='flex p-2'><img className=' w-6 ml-1 mr-7 icon' src="img/gender.svg" alt="gender_icon" /><Link href='#'><a className='hover:text-red-600 icon'>Gender</a></Link></li>
