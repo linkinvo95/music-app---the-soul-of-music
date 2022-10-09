@@ -10,6 +10,7 @@ body {
   width: 1903px;
   height: 2810px;
   font-family: 'PT Serif', serif;
+  background-color: #0c1f36;
 }
 
 a,h1,h2 {
@@ -21,6 +22,12 @@ a,h1,h2 {
   box-sizing: border-box;
 }
 
+audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
+  background-color: rgb(185, 23, 23);
+
+}
+
+/* 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -29,7 +36,7 @@ a,h1,h2 {
     color: #33455a;
     background-color: #0c1f36;
   }
-}
+} */
 
 .sidebar_com {
   background-color: #0b1828;

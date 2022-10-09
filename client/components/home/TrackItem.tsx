@@ -10,7 +10,7 @@ interface TrackItemProps {
     active?: boolean
 }
 const TrackItem: FC<TrackItemProps> = ({ track, active = false }) => {
-    console.log(track);
+    console.log("track", track);
 
     return (
         <>
@@ -27,8 +27,8 @@ const TrackItem: FC<TrackItemProps> = ({ track, active = false }) => {
                         )
                     }
                     <div className="p-3 w-[100px]  flex-shrink-0">
-                    <Link  href={`/tracks/${track._id}`}>
-                        <img src={track.picture} alt="" />
+                        <Link href={`/tracks/${track._id}`}>
+                            <img src={track.picture} alt="" />
                         </Link>
 
                     </div>
@@ -36,8 +36,11 @@ const TrackItem: FC<TrackItemProps> = ({ track, active = false }) => {
                         <p>{track.name}</p>
                         <span className='text-xs text-[#868d94]'>{track.text}</span>
                     </div>
-                   
-                    <img className='h-4 mt-10' src="/img/love.svg" alt="" />
+
+                    <span className='flex flex-wrap'>
+                        <img className='h-4 mt-10' src="/img/love.svg" alt=""/>
+                        <p>{track.listens}</p>
+                    </span>
                     <div className="p-3 mt-6 w-12 flex-shrink-0 text-right">
                         {active && <div>02:42/ 03:22</div>}
                         <svg id="icon-bin" viewBox="0 0 32 32">
@@ -45,7 +48,8 @@ const TrackItem: FC<TrackItemProps> = ({ track, active = false }) => {
                             <path d="M26.5 4h-6.5v-2.5c0-0.825-0.675-1.5-1.5-1.5h-7c-0.825 0-1.5 0.675-1.5 1.5v2.5h-6.5c-0.825 0-1.5 0.675-1.5 1.5v2.5h26v-2.5c0-0.825-0.675-1.5-1.5-1.5zM18 4h-6v-1.975h6v1.975z"></path>
                         </svg>
                     </div>
-                    <img className='w-6 h-6 mt-9 hover:fill-[#868d94]' src="/img/ellipsis-vertical.svg" alt="" />
+                    <img className='w-6 h-6 mt-9 hover:fill-[#868d94]' src="/img/ellipsis-vertical.svg" alt="ellipsis-vertical" />
+
                 </div>
             </div>
         </>

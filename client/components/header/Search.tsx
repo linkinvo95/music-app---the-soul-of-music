@@ -38,10 +38,10 @@ ml-[224px] w-full h-[103px]'>
              </div>
              
     </div>
-    <div className='ml-[1350px] mt-2'>
+    {/* <div className='ml-[1350px] mt-2'>
             <button className='btn_auth text-white mr-5 mb-1 rounded-full h-[40px] min-w-[120px] '>Register</button>
             <button className='btn_auth text-white rounded-full h-[40px] min-w-[120px]'>Sign In</button>
-        </div>
+        </div> */}
     </div>
   );
 }

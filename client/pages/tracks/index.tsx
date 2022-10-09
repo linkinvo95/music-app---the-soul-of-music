@@ -12,7 +12,7 @@ const Index = () => {
          comments: []
         },
         {_id: '2', name: "Трек1", artist: "Исполнитель",
-         text:"Какойто текс", listens: 5, 
+         text:"Какойто текс", listens: 7, 
          audio: "http://localhost:5000/audio/3dd0aef5-8b98-4231-bac0-195366fdb497.mp3",
          picture: "http://localhost:5000/image/da9f0adb-a6bf-443f-b3df-e5a1bc3f6867.png",
          comments: [] 

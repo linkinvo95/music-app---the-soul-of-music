@@ -1,14 +1,15 @@
 import type { NextPage } from 'next'
+import DashboardArtist from '../components/home/DashboardArtist/DashboardArtist';
+import Layout from '../layout/Layout';
 import Main from './../components/home/Main';
 
 
 const Home: NextPage = () => {
   return (
-    <div>
-      <div className="flex flex-wrap">
-        <Main />
-      </div>
-    </div>
+    <>
+        {/* <Main /> */}
+        <DashboardArtist/>
+</>
   )
 }
 

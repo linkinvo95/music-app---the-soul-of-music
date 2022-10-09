@@ -1,9 +1,10 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { FC } from 'react';
 import CardTrackItem from '../../components/home/CardTrackItem';
 import { ITrack } from '../../types/track';
 
-const TrackPage = () => {
+const TrackPage: FC<ITrack> = () => {
+
     const track: ITrack = {
         _id: '1', name: "Трек1", artist: "Исполнитель",
         text: "Какойто текс", listens: 5,
@@ -35,19 +36,20 @@ const TrackPage = () => {
 
                         </div>
                     )}
-                </div> */}
+                </div> 
 
 
-                {/* <audio
+                <audio
                     controls
                     src={track.audio}>
                     <code className='bg-red-500'>audio</code> element.
-                </audio> */}
-{/* 
+                </audio>
+
                         <button>Submit</button>
             </div> */}
 
-            <CardTrackItem/>
+            {<CardTrackItem text={track.text} _id={track._id} name={track.name} artist={track.artist} listens={track.listens} picture={track.picture} audio={track.audio} comments={track.comments}/>}
+
         </div>
     );
 };

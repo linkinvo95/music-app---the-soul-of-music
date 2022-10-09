@@ -7,7 +7,7 @@ interface TrackListProps {
 }
 
 const PlayListItem: FC<TrackListProps> = ({ tracks }) => {
-    console.log('gg',tracks);
+
     
     return (
         <div>
